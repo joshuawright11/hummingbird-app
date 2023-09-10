@@ -1,6 +1,6 @@
 import Hummingbird
 
-let app = HBApplication(configuration: .init(address: .hostname("127.0.0.1", port: 8080)))
+let app = HBApplication(configuration: .init(address: .hostname("0.0.0.0", port: 8080)))
 app.router.get("hello") { request -> String in
     return "Hello"
 }
